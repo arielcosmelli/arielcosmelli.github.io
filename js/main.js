@@ -78,6 +78,14 @@
         items: 1
     });
     
+    // Skills carousel
+    $(".skills-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1500,
+        dots: true,
+        loop: true,
+        items: 5
+    });
     
     // Back to top button
     $(window).scroll(function () {
