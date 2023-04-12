@@ -84,9 +84,23 @@
         smartSpeed: 1500,
         dots: true,
         loop: true,
-        items: 5
-    });
-    
+        items: 5,
+        responsive: {
+          0: {
+            items: 2
+          },
+          768: {
+            items: 3
+          },
+          992: {
+            items: 4
+          },
+          1200: {
+            items: 5
+          }
+        }
+      }); 
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
